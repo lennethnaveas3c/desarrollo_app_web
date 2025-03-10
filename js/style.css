@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+nav {
+    padding: 10px 0; 
+    display: flex;
+    background-color: #1e3a5f;
+}
+
+ul {
+    display: flex;
+    list-style: none; 
+    padding: 0;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(25, 75, 119);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a:hover {
+    color: aquamarine;
+}
+
+.operaciones{
+    padding: 50px;
+}
+
+button{
+    padding: 5px;
+    background-color: aqua;
+}
