@@ -32,22 +32,30 @@ function MostrarUsuarioContraseña(){
 }
 
 //ejercicio 3
-function MostrarSigno(){
-    let numero = 0;
-    if (numero >= +1) {
-        alert("El numero es positivo")
+function MostrarSigno() {
+    let numero = parseInt(prompt("Introduce un numero"));
+    if (numero < 0) {
+        alert("El numero es negativo");
+    } else if (numero > 0) {
+        alert("El numero es positivo");
     } else {
-        if (numero <= -1){
-            alert("El numero es negativo")
-        } else {
-            if (numero = 0){
-                alert("El numero es cero")
-            }
-        }
+        alert("El numero es cero");
     }
 }
 
+
 //ejercicio 4
-function MostrarPuntuacion(){
-    let puntuacion = 
+function MostrarPuntuacion() {
+    let puntuacion = parseInt(prompt("Introduce tu puntuación:"));
+    if (puntuacion >= 90) {
+        alert("Excelente");
+    } else if (puntuacion >= 70 && puntuacion < 90) {
+        alert("Buen trabajo");
+    } else {
+        alert("Necesitas mejorar");
+    }
 }
+
+
+
+
