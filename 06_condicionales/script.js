@@ -35,11 +35,11 @@ function MostrarUsuarioContraseña(){
 function MostrarSigno() {
     let numero = parseInt(prompt("Introduce un numero"));
     if (numero < 0) {
-        alert("El numero es negativo");
+        alert("El numero es negativo"); //alerta numero negativo
     } else if (numero > 0) {
-        alert("El numero es positivo");
+        alert("El numero es positivo"); //alerta numero positivo
     } else {
-        alert("El numero es cero");
+        alert("El numero es cero"); //alerta numero 0
     }
 }
 
@@ -47,9 +47,9 @@ function MostrarSigno() {
 //ejercicio 4
 function MostrarPuntuacion() {
     let puntuacion = parseInt(prompt("Introduce tu puntuación:"));
-    if (puntuacion >= 90) {
+    if (puntuacion >= 90) {     //puntuacin mayor o igual a 90
         alert("Excelente");
-    } else if (puntuacion >= 70 && puntuacion < 90) {
+    } else if (puntuacion >= 70 && puntuacion < 90) { //puntuacion mayor a 70 y menor a 90
         alert("Buen trabajo");
     } else {
         alert("Necesitas mejorar");
