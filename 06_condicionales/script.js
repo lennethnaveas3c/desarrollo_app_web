@@ -23,8 +23,8 @@ function MostrarUsuarioContraseña(){
     let Usuario = "usuario123"; //nombre del usuario
     let Contraseña = "secreto"; //nombre de la contraseña
     let respuesta_Usuario = prompt("Ingrese su nombre de usuario");
-    let respuesta_Contraseña = prompt("Ingrese su contraseña");
-    if (Usuario == respuesta_Usuario && Contraseña == respuesta_Contraseña) {
+    let respuesta_Contraseña = prompt("Ingrese su contraseña"); //para poder ingresar un dato
+    if (Usuario == respuesta_Usuario && Contraseña == respuesta_Contraseña) { //el dato correspondiente a cada preguna
         alert("Acceso concedido")
     } else {
             alert("Acceso denegado")
@@ -33,7 +33,7 @@ function MostrarUsuarioContraseña(){
 
 //ejercicio 3
 function MostrarSigno() {
-    let numero = parseInt(prompt("Introduce un numero"));
+    let numero = parseInt(prompt("Introduce un numero")); //introducir un numero
     if (numero < 0) {
         alert("El numero es negativo"); //alerta numero negativo
     } else if (numero > 0) {
@@ -46,7 +46,7 @@ function MostrarSigno() {
 
 //ejercicio 4
 function MostrarPuntuacion() {
-    let puntuacion = parseInt(prompt("Introduce tu puntuación:"));
+    let puntuacion = parseInt(prompt("Introduce tu puntuación:")); //puntuacion
     if (puntuacion >= 90) {     //puntuacin mayor o igual a 90
         alert("Excelente");
     } else if (puntuacion >= 70 && puntuacion < 90) { //puntuacion mayor a 70 y menor a 90
