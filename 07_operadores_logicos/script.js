@@ -2,7 +2,7 @@
 console.log("todo bien");
 
 
-//ejercicio 1
+//ejercicio 5
 function MostrarTemperatura(){
 
 let temperatura = 27;      //temperatura
@@ -18,7 +18,7 @@ if (temperatura <= 0) {    //si la emperatura es meno o igual a 0
 }
 }
 
-//ejercicio 2
+//ejercicio 6
 function MostrarUsuarioContraseña(){
     let Usuario = "usuario123"; //nombre del usuario
     let Contraseña = "secreto"; //nombre de la contraseña
@@ -31,7 +31,7 @@ function MostrarUsuarioContraseña(){
     }
 }
 
-//ejercicio 3
+//ejercicio 7
 function MostrarSigno() {
     let numero = parseInt(prompt("Introduce un numero")); //introducir un numero
     if (numero < 0) {
@@ -44,7 +44,7 @@ function MostrarSigno() {
 }
 
 
-//ejercicio 4
+//ejercicio 8
 function MostrarPuntuacion() {
     let puntuacion = parseInt(prompt("Introduce tu puntuación:")); //puntuacion
     if (puntuacion >= 90) {     //puntuacin mayor o igual a 90
