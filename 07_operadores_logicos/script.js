@@ -4,51 +4,64 @@ console.log("todo bien");
 
 //ejercicio 5
 function MostrarVerificacion(){
-    let 
-}
-
-//ejercicio 6
-function MostrarDescuento(){
-    let Usuario = "usuario123";
-    let Contraseña = "secreto"; 
-    let respuesta_Usuario = prompt("Ingrese su nombre de usuario");
-    let respuesta_Contraseña = prompt("Ingrese su contraseña"); 
-    if (Usuario == respuesta_Usuario && Contraseña == respuesta_Contraseña) { 
-        alert("Acceso concedido")
+    let edad = parseInt(prompt("Introduce tu edad:"));
+    let aceptaTerminos = confirm("¿Aceptas los terminos y condiciones?");
+    if (edad >= 18 && aceptaTerminos) {
+        alert("Acceso concedido");
     } else {
-            alert("Acceso denegado")
+        alert("Acceso Denegado");
     }
 }
+
+
+//ejercicio 6
+function MostrarDescuento() {
+    let edad = parseInt(prompt("Introduce tu edad:"));
+    let esEstudiante = confirm("¿Eres estudiante?");
+    if (edad >= 60 || esEstudiante) {
+            alert("Descuento aplicado");
+    } else {
+            alert("No tienes descuento");
+    }
+}
+
 
 //ejercicio 7
 function MostrarValidacion() {
-    let numero = parseInt(prompt("Introduce un numero")); 
-    if (numero < 0) {
-        alert("El numero es negativo"); 
-    } else if (numero > 0) {
-        alert("El numero es positivo"); 
+    let usuario = prompt("Introduce tu nombre de usuario:");
+    let contraseña = prompt("Introduce tu contraseña:");
+
+    // Verifica si alguna de las dos variables está vacía
+    if (!usuario || !contraseña) {
+        alert("Error: Debes ingresar usuario y contraseña");
     } else {
-        alert("El numero es cero"); 
+        alert("Inicio de sesión exitoso");
     }
 }
 
-
 //ejercicio 8
 function MostrarCondiciones() {
-    let puntuacion = parseInt(prompt("Introduce tu puntuación:"));
-    if (puntuacion >= 90) {     
-        alert("Excelente");
-    } else if (puntuacion >= 70 && puntuacion < 90) { 
-        alert("Buen trabajo");
+    let energiaSuficiente = confirm("¿La máquina tiene suficiente energía?");
+    let interruptorEncendido = confirm("¿El interruptor está encendido?");
+
+    if (energiaSuficiente && interruptorEncendido) {
+        alert("Máquina encendida");
     } else {
-        alert("Necesitas mejorar");
+        alert("No se puede encender la máquina");
     }
 }
 
 
 //ejercicio 9
 function MostrarRestringido() {
+    let bloqueado = confirm("¿Tienes acceso?");
+    let tieneCredenciales = confirm("¿Tienes credenciales?");
 
+    if (!bloqueado || tieneCredenciales) {
+        alert("Acceso concedido");
+    } else {
+        alert("Acceso denegado");
+    }
 }
 
 
