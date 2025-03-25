@@ -29,7 +29,9 @@ function MostrarIndiceMasa() {
 
 
 //ejercicio 16
-function MostrarNotas() {}
+function MostrarNotas() {
+    let nota1 = parseFloat(prompt("Introduce la nota 1"));
+}
 
 
 
