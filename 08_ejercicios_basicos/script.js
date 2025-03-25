@@ -14,7 +14,18 @@ function MostrarParImpar() {
 
 
 //ejercicio 15
-function MostrarIndiceMasa() {}
+function MostrarIndiceMasa() {
+    let peso = parseFloat(prompt("Introduce tu peso en kg"));
+    let altura = parseFloat(prompt("introduce tu altura en metros"));
+    let imc = peso / (altura * altura);
+    if (imc < 18.5){
+        alert("Bajo peso");
+    } else if (imc >= 18.5 && imc < 24.9){
+        alert("Normal");
+    } else if (imc >= 25){
+        alert("Sobrepeso");
+    }
+}
 
 
 //ejercicio 16
