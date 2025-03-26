@@ -5,6 +5,12 @@ console.log("todo bien");
 //ejercicio Bucle while: Imprimir del 1 al 5
 function MostrarUnoCinco() {
     let i = 1;
+    let array = [];
+    while (i <= 5){
+        array.push(i);
+        i++;
+    }
+    alert(`los numeros son ${array.join(" -")}`);
 }
 
 
@@ -23,7 +29,10 @@ function MostrarDies() { //fuction es funcion
 //ejercicio Bucle for: Sumar los primeros 5 números
 function MostrarCinco() {
     let suma = 0;
-    for ()
+    for (let i = 1; i <= 5; i++){
+        suma += i;
+    }
+    alert(`La suma de los primeros 5 numeros es ${suma}`);
 }
 
 
