@@ -9,7 +9,7 @@ function MostrarUnoCinco() {
 
 
 //ejercicio Bucle while: Cuenta regresiva del 10 al 1
-function MostrarDies() {
+function MostrarDies() { //fuction es funcion
     let count = 10;
     let array = []; //array lista de elementos
     while (count >= 1){
@@ -21,7 +21,10 @@ function MostrarDies() {
 
 
 //ejercicio Bucle for: Sumar los primeros 5 números
-function MostrarCinco() {}
+function MostrarCinco() {
+    let suma = 0;
+    for ()
+}
 
 
 //ejercicio Bucle for: Imprimir múltiplos de 2 del 1 al 10
