@@ -37,4 +37,12 @@ function MostrarCinco() {
 
 
 //ejercicio Bucle for: Imprimir múltiplos de 2 del 1 al 10
-function MostrarUnoDies() {}
+function MostrarUnoDies() {
+    let array = [];
+    for (let i = 1; i <= 10; i ++){
+        if (i % 2 == 0){
+            array.push(i);
+            alert(`los numeros son ${array.join(" -")}`);
+        }
+    }
+}
