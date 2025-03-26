@@ -29,10 +29,18 @@ function MostrarIndiceMasa() {
 
 
 //ejercicio 16
+
+
+
+
+
 function MostrarNotas() {
     let nota1 = parseFloat(prompt("Introduce la nota 1"));
+    let nota2 = parseFloat(prompt("Introduce la nota 2"));
+    let nota3 = parseFloat(prompt("Introduce la nota 3"));
+    let promedio = (nota1 + nota2 + nota3) / 3;
+    if (promedio < 4.0){
+        alert ("Reprobado");
+    } else if (promedio >= 4.0 )
+        alert ("Aprobado");
 }
-
-
-
-
