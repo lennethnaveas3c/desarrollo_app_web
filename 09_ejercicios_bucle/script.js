@@ -2,45 +2,17 @@
 console.log("todo bien");
 
 
-//ejercicio 14
-function MostrarParImpar() {
-    let numero = parseInt(prompt("Introduce un numero")); 
-    if (numero % 2 == 0){
-        alert("El numero es par");
-    } else {
-        alert("El numero es impar");
-    }
-}
+//ejercicio Bucle while: Imprimir del 1 al 5
+function MostrarUnoCinco() {}
 
 
-//ejercicio 15
-function MostrarIndiceMasa() {
-    let peso = parseFloat(prompt("Introduce tu peso en kg"));
-    let altura = parseFloat(prompt("introduce tu altura en metros"));
-    let imc = peso / (altura * altura);
-    if (imc < 18.5){
-        alert("Bajo peso");
-    } else if (imc >= 18.5 && imc < 24.9){
-        alert("Normal");
-    } else if (imc >= 25){
-        alert("Sobrepeso");
-    }
-}
+//ejercicio Bucle while: Cuenta regresiva del 10 al 1
+function MostrarDies() {}
 
 
-//ejercicio 16
+//ejercicio Bucle for: Sumar los primeros 5 números
+function MostrarCinco() {}
 
 
-
-
-
-function MostrarNotas() {
-    let nota1 = parseFloat(prompt("Introduce la nota 1"));
-    let nota2 = parseFloat(prompt("Introduce la nota 2"));
-    let nota3 = parseFloat(prompt("Introduce la nota 3"));
-    let promedio = (nota1 + nota2 + nota3) / 3;
-    if (promedio < 4.0){
-        alert ("Reprobado");
-    } else if (promedio >= 4.0 )
-        alert ("Aprobado");
-}
+//ejercicio Bucle for: Imprimir múltiplos de 2 del 1 al 10
+function MostrarUnoDies() {}
