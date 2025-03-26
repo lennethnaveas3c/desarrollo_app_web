@@ -3,11 +3,21 @@ console.log("todo bien");
 
 
 //ejercicio Bucle while: Imprimir del 1 al 5
-function MostrarUnoCinco() {}
+function MostrarUnoCinco() {
+    let i = 1;
+}
 
 
 //ejercicio Bucle while: Cuenta regresiva del 10 al 1
-function MostrarDies() {}
+function MostrarDies() {
+    let count = 10;
+    let array = []; //array lista de elementos
+    while (count >= 1){
+        array.push(count); //inserta datos en el array
+        count--;
+    }
+    alert(`los numeros son ${array.join(" - ")}`);
+}
 
 
 //ejercicio Bucle for: Sumar los primeros 5 números
