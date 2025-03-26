@@ -17,7 +17,6 @@ function MostrarParImpar() {
 function MostrarIndiceMasa() {
     let peso = parseFloat(prompt("Introduce tu peso en kg"));
     let altura = parseFloat(prompt("introduce tu altura en metros"));
-    altura = altura / 100;
     let imc = peso / (altura * altura);
     if (imc < 18.5){
         alert("Bajo peso");
