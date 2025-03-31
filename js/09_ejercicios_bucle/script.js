@@ -19,7 +19,7 @@ function MostrarUnoCinco() {
 function MostrarDies() { //fuction es funcion
     let count = 10;
     let array = []; //array lista de elementos
-    while (count >= 1){
+    while (count >= 1){                               //se sigue cumpliendo la condicion por eso se repite el while
         array.push(count); //inserta datos en el array
         count--;
     }
