@@ -4,13 +4,14 @@ console.log("todo bien");
 
 //ejercicio Bucle while: Imprimir del 1 al 5
 function MostrarUnoCinco() {
-    let i = 1;
-    let array = [];
-    while (i <= 5){
-        array.push(i);
-        i++;
+    let n = parseInt(prompt("Ingrese un numero"));
+    let count = 1;          //count es = a 1
+    let array = [];         //array = a lista de elementos o []
+    while (count <= n){     //n es = a 5
+        array.push(count);  //inserta el valor de count 1 
+        count++;
     }
-    alert(`los numeros son ${array.join(" -")}`);
+    alert(`los numeros son ${array.join(" - ")}`);
 }
 
 
