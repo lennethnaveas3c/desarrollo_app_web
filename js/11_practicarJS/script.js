@@ -3,7 +3,17 @@ console.log("todo bien");
 
 
 //ejercicio 1:
-function MostrarNaturales() {}
+function MostrarNaturales() {
+    let n = parseInt(prompt("Ingrese un numero:"));
+    let array = [];
+    let suma = 0;
+    for(let i = 1; i <= n; i++){
+        array.push(i);
+        suma += i;
+    }
+    alert(`La suma de los primeros ${n} numeros naturales es:\n ${suma}`);
+    alert(`Los primeros ${n} numeros naturales son:\n ${array.join(" -")}`);
+}
 
 
 //ejercicio 2:
@@ -30,8 +40,19 @@ function MostrarPares() {
     } 
 
 
-//ejercicio 4:
-function MostrarTeclado() {}
+//ejercicio 4:  //usa un for y luego un while
+function MostrarTeclado() {
+    let n = parseInt(prompt("Ingrese un numero hasta el 5:"));
+    let array = [];
+    let cantidad = 5;
+    let suma = 0;
+    let i = 1;
+    for (let i = 1; i < n; i++){
+        let num = parseInt(prompt("Ingrese un numero:"));
+        array.push(num);
+        suma += num;
+    }
+}
 
 
 //ejercicio 5:
