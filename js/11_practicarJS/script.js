@@ -3,68 +3,84 @@ console.log("todo bien");
 
 
 //ejercicio 1:
-function Mostrar() {}
+function MostrarNaturales() {}
 
 
 //ejercicio 2:
-function Mostrar() {}
+function MostrarPares() {
+    let array = [];
+    for(let n = 1; n <= 200; n++){
+        if(n % 2 == 0){
+            array.push(n);
+        }
+    }
+    alert(`Los primeros 100 numeros pares son:\n ${array.join(" -")}`);
+}
 
 
 //ejercicio 3:
-function Mostrar() {}
+    function Mostrarimpares() {
+        let array = []; 
+        for(let n = 1; n <= 200; n++){ //genera un bucle que llega hasta 200
+            if(n % 2 == 1){ 
+                array.push(n);  
+            } 
+        }
+        alert(`Los primero 100 numeros impares son:\n ${array.join(" - ")}`);
+    } 
 
 
 //ejercicio 4:
-function Mostrar() {}
+function MostrarTeclado() {}
 
 
 //ejercicio 5:
-function Mostrar() {}
+function MostrarSumar() {}
 
 
 //ejercicio 6:
-function Mostrar() {}
+function MostrarNumeros() {}
 
 
 //ejercicio 7:
-function Mostrar() {}
+function MostrarNumerosPares() {} //tu lo ingresas todos los numeros pares
 
 
 //ejercicio 8:
-function Mostrar() {}
+function MostrarLosNumerosPares() {} //te da los primeros numeros que tu ingreses
 
 
 //ejercicio 9:
-function Mostrar() {}
+function MostrarNumerosImpares() {}
 
 
 //ejercicio 10:
-function Mostrar() {}
+function MostrarLosNumerosImpares() {}
 
 
 //ejercicio 11:
-function Mostrar() {}
+function MostrarPrimerosMultiplos() {}
 
 
 //ejercicio 12:
-function Mostrar() {}
+function MostrarDiagramaDeFlujo() {}
 
 
 //ejercicio 13:
-function Mostrar() {}
+function MostrarGradosCaF() {}
 
 
 //ejercicio 14:
-function Mostrar() {}
+function MostrarPalabra() {}
 
 
 //ejercicio 15
-function Mostrar() {}
+function MostrarNumerosPrimos() {}
 
 
 //ejercicio 16:
-function Mostrar() {}
+function MostrarCaracteres() {}
 
 
 //ejercicio 17:
-function Mostrar() {}
+function MostrarValoresImprimir() {}
