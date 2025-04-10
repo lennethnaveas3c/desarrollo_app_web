@@ -129,8 +129,15 @@ function MostrarNumerosPares() {
 //ejercicio 8:
 function MostrarLosNumerosPares() {
     let n = parseInt(prompt("¿Cuantos numeros pares desea ingresar?"));
+    let sum = 0;
     let array = [];
-    let suma = 0;
+    for (let i = 1; i <= n; i++){
+        if(i % 2 == 0){
+            sum += i;
+            array.push(i);
+        }
+    }
+    alert(`${array.join(" + ")} = ${sum}`)
 } //te da los primeros numeros que tu ingreses
 
 
@@ -151,7 +158,18 @@ function MostrarNumerosImpares() {
 
 
 //ejercicio 10:
-function MostrarLosNumerosImpares() {}
+function MostrarLosNumerosImpares() {
+    let n = parseInt(prompt("¿Cuantos numeros impares desea ingrear?"));
+    let sum = 0;
+    let array = [];
+    for (let i = 1; i <= n; i++){
+        if(i % 2 == 1){
+            sum += i;
+            array.push(i);
+        }
+    }
+    alert(`${array.join(" +")} = ${sum}`)
+}
 
 
 //ejercicio 11:
