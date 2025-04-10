@@ -40,27 +40,73 @@ function MostrarPares() {
     } 
 
 
-//ejercicio 4:  //usa un for y luego un while
+//ejercicio 4: 
 function MostrarTeclado() {
-    let n = parseInt(prompt("Ingrese un numero hasta el 5:"));
     let array = [];
-    let cantidad = 5;
     let suma = 0;
-    let i = 1;
-    for (let i = 1; i < n; i++){
-        let num = parseInt(prompt("Ingrese un numero:"));
+    let cantidad = 5;
+
+    for (let i = 0; i < cantidad; i++) {
+        let num = parseInt(prompt(`Ingrese el número ${i + 1}:`));
+        while (isNaN(num)) {
+            num = parseInt(prompt(`Entrada inválida. Ingrese el número ${i + 1} nuevamente:`));
+        }
         array.push(num);
         suma += num;
     }
+
+    alert(`La suma de los 5 números es: ${suma}\nNúmeros ingresados: ${array.join(" - ")}`);
 }
 
 
 //ejercicio 5:
-function MostrarSumar() {}
+function MostrarSumar() {
+    let n = parseInt(prompt("¿Cuántos números desea sumar?"));
+    while (isNaN(n) || n <= 0) {
+        n = parseInt(prompt("Entrada inválida. Ingrese un número mayor a 0:"));
+    }
+    let array = [];
+    let suma = 0;
+    for (let i = 0; i < n; i++) {
+        let num = parseInt(prompt(`Ingrese el número ${i + 1}:`));
+        while (isNaN(num)) {
+            num = parseInt(prompt(`Entrada inválida. Ingrese el número ${i + 1} nuevamente:`));
+        }
+        array.push(num);
+        suma += num;
+    }
+    alert(`La suma de los ${n} números es: ${suma}\nNúmeros ingresados: ${array.join(" - ")}`);
+}
 
 
 //ejercicio 6:
-function MostrarNumeros() {}
+function MostrarNumeros() {
+    let num1 = Number(prompt("Ingrese el primer número:"));
+    let num2 = Number(prompt("Ingrese el segundo número:"));
+    let opcion = prompt("Elija una operación:\n1 - Sumar\n2 - Restar\n3 - Multiplicar\n4 - Dividir");
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("Uno o ambos valores ingresados no son válidos.");
+        return;
+    }
+    let resultado;
+    if (opcion === "1") {
+        resultado = num1 + num2;
+    } else if (opcion === "2") {
+        resultado = num1 - num2;
+    } else if (opcion === "3") {
+        resultado = num1 * num2;
+    } else if (opcion === "4") {
+        if (num2 === 0) {
+            alert("No se puede dividir por cero.");
+            return;
+        }
+        resultado = num1 / num2;
+    } else {
+        alert("Opción inválida.");
+        return;
+    }
+    alert(`El resultado es: ${resultado}`);
+}
 
 
 //ejercicio 7:
