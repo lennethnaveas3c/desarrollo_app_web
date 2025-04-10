@@ -110,7 +110,19 @@ function MostrarNumeros() {
 
 
 //ejercicio 7:
-function MostrarNumerosPares() {} //tu lo ingresas todos los numeros pares
+function MostrarNumerosPares() {
+    let n = parseInt(prompt("¿Cuantos numeros pares desea ingresar?"));
+    let array = [];
+    let suma = 0;
+    for(let i = 0; i < n; i++){
+        let num = parseInt(prompt(`Ingrese el numero ${i + 1}:`));
+        while (isNaN(num) || num % 2 !== 0) {
+            num = parseInt(prompt(`Entrada ivalida. Ingrese un numero par:`));
+        }
+        array.push(num);
+    }
+    alert(`Los numeros pares ingresados son:\n ${array.join(" - ")}`);
+} //tu lo ingresas todos los numeros pares
 
 
 //ejercicio 8:
@@ -118,7 +130,19 @@ function MostrarLosNumerosPares() {} //te da los primeros numeros que tu ingrese
 
 
 //ejercicio 9:
-function MostrarNumerosImpares() {}
+function MostrarNumerosImpares() {
+    let n = parseInt(prompt("¿Cuantos numeros impares desea ingresar?"));
+    let array = [];
+    let suma = 0;
+    for(let i = 0; i < n; i++){
+        let num = parseInt(prompt(`Ingrese el numero ${i + 1}:`));
+        while (isNaN(num) || num % 2 === 0) {
+            num = parseInt(prompt(`Entrada invalida. Ingrese un numero impar:`));
+        }
+        array.push(num);
+    }
+    alert(`Los numeros impares ingresados son:\n ${array.join(" - ")}`);
+}
 
 
 //ejercicio 10:
