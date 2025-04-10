@@ -122,11 +122,16 @@ function MostrarNumerosPares() {
         array.push(num);
     }
     alert(`Los numeros pares ingresados son:\n ${array.join(" - ")}`);
+    alert(`La suma de los numeros pares ingresados es:\n ${array.reduce((a, b) => a + b, 0)}`);
 } //tu lo ingresas todos los numeros pares
 
 
 //ejercicio 8:
-function MostrarLosNumerosPares() {} //te da los primeros numeros que tu ingreses
+function MostrarLosNumerosPares() {
+    let n = parseInt(prompt("¿Cuantos numeros pares desea ingresar?"));
+    let array = [];
+    let suma = 0;
+} //te da los primeros numeros que tu ingreses
 
 
 //ejercicio 9:
