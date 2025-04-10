@@ -173,7 +173,19 @@ function MostrarLosNumerosImpares() {
 
 
 //ejercicio 11:
-function MostrarPrimerosMultiplos() {}
+function MostrarPrimerosMultiplos() {
+    let n = parseInt(prompt("Ingrese un numero:"));
+    let m = 3
+    let array = [];
+    let suma = 0;
+    for(let i = 1; i <= n; i++){
+        let mult = m * i;
+            array.push(mult);
+            suma += mult;
+        
+    }
+    alert(`Los primeros ${n} multiplos de ${m} son:\n ${array.join(" - ")}`);
+}
 
 
 //ejercicio 12:
