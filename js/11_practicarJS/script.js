@@ -42,20 +42,15 @@ function MostrarPares() {
 
 //ejercicio 4: 
 function MostrarTeclado() {
-    let array = [];
-    let suma = 0;
-    let cantidad = 5;
-
-    for (let i = 0; i < cantidad; i++) {
-        let num = parseInt(prompt(`Ingrese el número ${i + 1}:`));
-        while (isNaN(num)) {
-            num = parseInt(prompt(`Entrada inválida. Ingrese el número ${i + 1} nuevamente:`));
+        let array = [];
+        let suma = 0;
+    for (let i = 1; i <= 5; i++) {
+            n= parseInt(prompt(`Ingrese el número ${i}:`));
+            array.push(n);
+            suma += n;
+    
         }
-        array.push(num);
-        suma += num;
-    }
-
-    alert(`La suma de los 5 números es: ${suma}\nNúmeros ingresados: ${array.join(" - ")}`);
+    alert(`Los números ingresados son:\n ${array.join(" - ")}`);
 }
 
 
@@ -189,19 +184,45 @@ function MostrarPrimerosMultiplos() {
 
 
 //ejercicio 12:
-function MostrarDiagramaDeFlujo() {}
+function MostrarDiagramaDeFlujo() {
+    let n = parseInt(prompt("Ingrese un numero:"));
+    let array = [];
+    let factorial = 1;
+    for(let i = 1; i <= n; i++){
+        array.push(i);
+        factorial *= i;
+    }
+    alert(`El factorial de ${n} es:\n ${factorial}`);
+    alert(`Los numeros del multiplicados del 1 al ${n} son:\n ${array.join(" - ")}`);
+}
 
 
 //ejercicio 13:
-function MostrarGradosCaF() {}
+function MostrarGradosCaF() {
+    let celsius = parseFloat(prompt("Ingrese la temperatura en grados Celsius:"));
+    let fahrenheit = (celsius * 9/5) + 32;
+    let array = [];
+    for(let i = 0; i <= celsius; i++){
+        let f = (i * 9/5) + 32;
+        array.push(f);
+    }
+    alert(`La temperatura en grados Fahrenheit es:\n ${fahrenheit}`);
+}
 
 
 //ejercicio 14:
-function MostrarPalabra() {}
+function MostrarPalabra() {
+    let palabra = prompt("Ingrese una palabra:");
+    let array = [];
+
+}
 
 
 //ejercicio 15
-function MostrarNumerosPrimos() {}
+function MostrarNumerosPrimos() {
+    let n = parseInt(prompt("Ingrese un numero:"));
+    let array = [];
+}
 
 
 //ejercicio 16:
@@ -209,5 +230,15 @@ function MostrarCaracteres() {}
 
 
 //ejercicio 17:
-function MostrarValoresImprimir() {}
+function MostrarValoresImprimir() {
+    let n = parseInt(prompt("Ingrese un numero:"));
+    let array = [];
+    for(let i = 0; i < n; i++){
+        let valor = parseInt(prompt(`Ingresar el valor ${i + 1}:`));
+        if(valor % 2 === 0){
+            array.push(valor);
+        }
+    }
+        alert(`Los numeros de ${n} son:\n ${array.join(" - ")}`);
+}
 
