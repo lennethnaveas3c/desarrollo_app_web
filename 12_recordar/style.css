@@ -62,6 +62,7 @@ img {
 
 .perfil {
     width: 120px;
+    margin-top: -50px;
 }
 
 .check {
@@ -74,10 +75,17 @@ img {
     height: 30px;
 }
 
+.main {
+    width: 100%;
+    background-color: #3798dc;
+    height: 100px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
 .container {
     background-color: #ffffff;
     margin: 30px;
-    padding: 60px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 0px grey;
     justify-content: center;
