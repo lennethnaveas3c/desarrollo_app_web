@@ -7,39 +7,46 @@
     <link rel="stylesheet" href="style.css">
     <body>
         <header>
-            <nav>
+            <nav class="nav">
+                <h1>Perfil</h1>
                 <ul>
-                    <li><h1>Perfil</h1></li>
                     <li>Inicio</li>
                     <li>Mi perfil</li>
                     <li>Conexiones</li>
                     <button>Cerrar sesión</button>
                 </ul>
             </nav>
-            <!-- Perfil de Jane Doe -->
+        </header>
+                                <!-- Perfil de Jane Doe -->
             <section class="container">
-                <img src="img/user-icon.png">
+                <img src="img/user-icon.png" alt="Jane Doe" class="perfil">
                 <h3>Jane Doe</h3>
                 <p>Bergen, Noruega</p>
                 <p>Desarrolladora Frontend</p>
                 <p>Conociemientos en HTML, CSS, JavaScript</p>
                 <img src="img/"><p>Editar perfil</p>
             </section>
-            <!-- Solicitudes de Conexion-->
+                                <!-- Solicitudes de Conexion-->
             <section class="solicitud">
-                <h2>Solicitudes de conexión</h2><button class="Ver">Ver todas</button>
-                <img src="img/user-icon.png"><p>Steve Jobs</p><img src="img/check-icon.png"><img src="img/delete-1-icon.png">
-                <img src="img/user-icon.png"><p>Bill Gates</p><img src="img/check-icon.png"><img src="img/delete-1-icon.png">
+                <div class="solicitud-header">
+                    <h2>Solicitudes de conexión</h2><button class="Ver">Ver todas</button>
+                </div>
+                    <img src="img/user-icon.png"><p>Steve Jobs</p>
+                    <img src="img/check-icon.png" class="check"><img src="img/delete-1-icon.png" class="delete">
+                                <!-- tengo que seprararlo por el momento -->
+                    <img src="img/user-icon.png"><p>Bill Gates</p>
+                    <img src="img/check-icon.png" class="check"><img src="img/delete-1-icon.png" class="delete">
             </section>
-            <!-- Tus Conexiones -->
+                                <!-- Tus Conexiones -->
             <section class="conexiones">
+            <div class="solicitud-header">
                 <h2>Tus conexiones</h2><button class="Ver">Ver todas</button>
+            </div>
                 <img src="img/user-icon.png"><p>Richard Stallman</p>
                 <img src="img/user-icon.png"><p>Linus Torvalds</p>
-                <img src="img/user-icon.png"><p>Ada Lovelace</p>>
+                <img src="img/user-icon.png"><p>Ada Lovelace</p>
                 <img src="img/user-icon.png"><p>Grace Hopper</p>
             </section>
-        </header>
     </body>
 </head>
 </html>

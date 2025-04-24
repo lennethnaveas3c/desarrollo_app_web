@@ -6,25 +6,26 @@
 
 body {
     background-color: #edf0f2;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 nav {
-    padding: 20px 0; 
+    padding: 20px; 
     display: flex;
     background-color: #2c3e50;
+    align-items: center;
 }
 
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-}
+h1 {
+    flex: 1;
+    color: #ffffff;
+} 
 
-h3 {
-    font-family: Arial, Helvetica, sans-serif;
-}
+h2 {}
 
-p{
-    font-family: Arial, Helvetica, sans-serif;
-}
+h3 {}
+
+p {}
 
 ul {
     display: flex;
@@ -55,14 +56,51 @@ button {
     color: #449fde;
 }
 
+img {
+    width: 50px;
+}
+
+.perfil {
+    width: 120px;
+}
+
+.check {
+    width: 30px;
+    height: 30px;
+}
+
+.delete {
+    width: 30px;
+    height: 30px;
+}
+
 .container {
-    background-color: #8ec28c;
+    background-color: #ffffff;
+    margin: 30px;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px grey;
+    justify-content: center;
+    text-align: center;
+}
+
+.solicitud-header {
+    display: flex;
 }
 
 .solicitud {
-    background-color: #a9a5cc;
+    background-color: #ffffff;
+    margin: 30px;
+    padding: 60px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px 0px 5px 0px grey;
 }
 
 .conexiones {
-    background-color: #b68585;
+    background-color: #ffffff;
+    margin: 30px;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px grey;
 }
