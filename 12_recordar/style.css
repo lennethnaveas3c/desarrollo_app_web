@@ -39,6 +39,12 @@ li {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.Editar {
+    color: #3798dc;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
 button {
     padding: 5px;
     background-color: #3798dc;
@@ -65,6 +71,11 @@ img {
     margin-top: -50px;
 }
 
+.rueda {
+    width: 20px;
+    height: 20px;
+}
+
 .check {
     width: 30px;
     height: 30px;
@@ -74,6 +85,15 @@ img {
     width: 30px;
     height: 30px;
 }
+
+.Steve {
+    display: flex;
+}
+
+.Bill {
+    display: flex;
+}
+
 
 .main {
     width: 100%;
@@ -111,4 +131,5 @@ img {
     padding: 60px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 0px grey;
+    display: flex;
 }
