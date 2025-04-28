@@ -30,6 +30,7 @@ nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-right: auto;
 }
 
 /*pagina lado derecho*/
@@ -105,6 +106,8 @@ img {
     height: 30px;
 }
 
+
+/*solicitudes de conexion*/
 .Steve {
     display: flex;
 }
