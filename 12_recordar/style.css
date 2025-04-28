@@ -16,16 +16,35 @@ nav {
     align-items: center;
 }
 
+/*toda la pagina*/
+.toda_pag{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*pagina lado izquierdo*/
+.izquierda {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*pagina lado derecho*/
+.derecha {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+
 h1 {
     flex: 1;
     color: #ffffff;
 } 
-
-h2 {}
-
-h3 {}
-
-p {}
 
 ul {
     display: flex;
@@ -132,4 +151,12 @@ img {
     border-radius: 10px;
     box-shadow: 0px 0px 5px 0px grey;
     display: flex;
+}
+
+.usuario{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
 }
