@@ -1,0 +1,57 @@
+*{}
+
+.padre{
+    display: flex;  /* flexiona elementos y necesario para usar justify-content*/
+    justify-content: space-between; /* Distribuye elementos de forma uniforme horizontalmente. */
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+.dos{
+    display: flex;  /* flexiona elementos y necesario para usar justify-content*/
+    justify-content: space-between; /* Distribuye elementos de forma uniforme horizontalmente. */
+    background-color: rgb(142, 255, 127);
+    padding: 10px;
+    margin: 20px;
+}
+
+.tres{
+    display: flex;  /* flexiona elementos y necesario para usar justify-content*/
+    justify-content: space-between; /* Distribuye elementos de forma uniforme horizontalmente. */
+    background-color: rgb(127, 178, 255);
+    padding: 10px;
+    margin: 20px;
+}
+
+.cuatro{
+    display: flex;  /* flexiona elementos y necesario para usar justify-content*/
+    justify-content: space-between; /* Distribuye elementos de forma uniforme horizontalmente. */
+    background-color:  rgb(227, 255, 127);
+    padding: 10px;
+    margin: 20px;
+}
+
+.cinco{
+    display: flex;  /* flexiona elementos y necesario para usar justify-content*/
+    justify-content: space-between; /* Distribuye elementos de forma uniforme horizontalmente. */
+    background-color: rgb(172, 127, 255);
+    padding: 10px;
+    margin: 20px;
+}
+
+.seis{
+    display: flex;  /* flexiona elementos y necesario para usar justify-content*/
+    justify-content: space-between; /* Distribuye elementos de forma uniforme horizontalmente. */
+    background-color: rgb(255, 127, 197);
+    padding: 10px;
+    margin: 20px;
+}
+
+/*fotos*/
+img.octocat {
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+}
