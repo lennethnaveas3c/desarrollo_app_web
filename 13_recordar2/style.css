@@ -1,5 +1,14 @@
 *{}
 
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    width: 840px;
+}
+
 .padre{
     display: flex;  /* flexiona elementos y necesario para usar justify-content*/
     justify-content: space-between; /* Distribuye elementos de forma uniforme horizontalmente. */
@@ -8,10 +17,9 @@
     margin: 20px;
 }
 
-
 .dos{
     display: flex;  /* flexiona elementos y necesario para usar justify-content*/
-    justify-content: space-between; /* Distribuye elementos de forma uniforme horizontalmente. */
+    justify-content: space-around;
     background-color: rgb(142, 255, 127);
     padding: 10px;
     margin: 20px;
@@ -35,7 +43,7 @@
 
 .cinco{
     display: flex;  /* flexiona elementos y necesario para usar justify-content*/
-    justify-content: space-between; /* Distribuye elementos de forma uniforme horizontalmente. */
+    justify-content: space-around; /* Distribuye elementos de forma uniforme horizontalmente. */
     background-color: rgb(172, 127, 255);
     padding: 10px;
     margin: 20px;
@@ -49,9 +57,11 @@
     margin: 20px;
 }
 
+
 /*fotos*/
 img.octocat {
     height: 200px;
     margin: 10px;
     padding: 10px;
+    display: flex;
 }
