@@ -1,0 +1,26 @@
+*{
+    font-family: comic sans ms;
+    color: #ffffff;
+}
+
+body{}
+
+nav{
+    background-color: #333333;
+    padding: 20px;
+}
+
+h1{}
+
+ul{}
+
+li{
+    list-style: none;
+}
+
+button{
+    padding: 3px;
+    background-color: #17a2b8;
+    border-color: #000000;
+    color: #ffffff;
+}
