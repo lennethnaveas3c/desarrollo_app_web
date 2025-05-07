@@ -37,29 +37,30 @@
 .cuadro4{
     background-color: darkcyan;
     margin: 20px;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
 }
 
 .cuadro5{
     background-color: midnightblue;
     margin: 20px;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
+    
 }
 
 .cuadro6{
     background-color: darkseagreen;
     margin: 20px;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 200px;
 }
 
 .cuadro7{
     background-color: lightseagreen;
     margin: 20px;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 200px;
 }
 
 /*aqui abajo ira la parte2*/
