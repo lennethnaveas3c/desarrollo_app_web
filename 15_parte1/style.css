@@ -15,14 +15,15 @@
 
 .cuadro1{
     background-color: aqua;
-    
-    height: 220px;
+    height: 200px;
     margin: 20px;
+    width: 300px;
 }
 
 .cuadro2{
     background-color: blue;
-    height: 60px;
+    height: 50px;
+    width: 300px;
     margin: 20px;
 }
 
@@ -60,3 +61,5 @@
     height: 100px;
     width: 100px;
 }
+
+/*aqui abajo ira la parte2*/
