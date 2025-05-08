@@ -11,6 +11,13 @@
 .column-container{
     height: 700px;
     flex:1;
+    display: flex;
+    justify-content: center;
+}
+
+.columnaDerecha{
+    display: flex;
+    flex-direction: column;
 }
 
 .cuadro1{
