@@ -25,6 +25,11 @@
     height: 50px;
     width: 310px;
     margin: 20px;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .cuadro3{
