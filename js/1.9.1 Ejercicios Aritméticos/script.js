@@ -28,5 +28,21 @@ function MostrarPromedios() {
 
 //ejercicio 2:
 function MostrarParYInpar() {
+    let numeros = [];
+    let par = 0;
+    let impar = 0;
+    for (let i = 0; i < 6; i++) {
+        let numero = parseInt(prompt("Introduce un numero: "));
+        if (!isNaN(numero)) {
+            numeros.push(numero);
+            if (numero % 2 === 0) {
+                par++;
+            }
+            else {
+                impar++;
+            }
+        }
+    }
+    alert(`cantidad de numeros pares: ${par} \n cantidad de numeros impares: ${impar}`);
 }
 
