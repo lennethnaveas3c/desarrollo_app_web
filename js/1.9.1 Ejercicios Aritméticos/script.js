@@ -43,6 +43,6 @@ function MostrarParYInpar() {
             }
         }
     }
-    alert(`cantidad de numeros pares: ${par} \n cantidad de numeros impares: ${impar}`);
+    console.log(`cantidad de numeros pares: ${par} \n cantidad de numeros impares: ${impar}`);
 }
 
