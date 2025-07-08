@@ -1,48 +1,36 @@
 //creacion de variables
 console.log("todo bien");
 
+//no me resulta
+/*
+let resultado = [];
+function agregarElementoCompra() {
+    let elemento = document.gerElementById("lista").value;
+    resultado += document.getElementById("resultado").innerHTML = 
+    `<li>${elemento}</li>`;
+}
+*/
 
-//ejercicio 1:
-function MostrarPromedios() {
-    let notas = [];
-    let suma = 0;
-    for (let i = 0; i < 5; i++) {
-        let nota = parseFloat(prompt("Introduce una nota: "));
-        if (!isNaN(nota) || nota < 1 || nota > 7) {
-            notas.push(nota);
-            suma += nota;
-        } else {
-            alert("nota ivalida, porfavor ingrese un numero entre el 1.0 al 7.0")
-            i--;
-        }
-    }
-    let promedio = suma / notas.length;
-    alert(`La nota promedio es ${promedio.toFixed(2)}`);
-    if (promedio >= 4.0) {
-        alert("Aprobado");
-    } else {
-        alert("Reprobado");
-    }
+
+//ejemplo 1 
+
+const resultado = document.getElementById("resulado");
+
+function agregarElementoCompra() {
+    //valor input
+    let elemento = document.getElementById("lista").value;
+    //crear elemento html --> createElement
+    let item = document.createElement("li");
+    item.innerText = elemento; //<li>--innertext</li>
+    resultado.appendChild(item);
 }
 
 
-//ejercicio 2:
-function MostrarParYInpar() {
-    let numeros = [];
-    let par = 0;
-    let impar = 0;
-    for (let i = 0; i < 6; i++) {
-        let numero = parseInt(prompt("Introduce un numero: "));
-        if (!isNaN(numero)) {
-            numeros.push(numero);
-            if (numero % 2 === 0) {
-                par++;
-            }
-            else {
-                impar++;
-            }
-        }
-    }
-    console.log(`cantidad de numeros pares: ${par} \n cantidad de numeros impares: ${impar}`);
-}
 
+//ejemplo 2
+let carrito = [];
+function agregarElemento2() {
+    let elemento = document.getElementById("lista2").value;
+    carrito.push(elemento)
+    documento.getElementById(resultado2).innerTextHTML = Carro: `${carrito.join(" - ")}`;
+}
