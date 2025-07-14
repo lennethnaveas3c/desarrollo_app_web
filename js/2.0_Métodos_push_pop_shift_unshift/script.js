@@ -1,93 +1,49 @@
-//creacion de variables
-console.log("todo bien");
+// Ejercicio 1
+function agregarElemento1() {
+    const input = document.getElementById("lista1");
+    const resultado = document.getElementById("resultado1");
 
-//no me resulta
-/*
-let resultado = [];
-function agregarElementoCompra() {
-    let elemento = document.gerElementById("lista").value;
-    resultado += document.getElementById("resultado").innerHTML = 
-    `<li>${elemento}</li>`;
-}
-*/
+    const valor = input.value.trim();
+    if (valor === "") return;
 
-/*
-//ejemplo 1 
-
-const resultado = document.getElementById("resulado");
-
-function agregarElementoCompra() {
-    //valor input
-    let elemento = document.getElementById("lista").value;
-    //crear elemento html --> createElement
-    let item = document.createElement("li");
-    item.innerText = elemento; //<li>--innertext</li>
+    const item = document.createElement("li");
+    item.textContent = valor;
     resultado.appendChild(item);
+
+    input.value = "";
+    input.focus();
 }
 
-
-
-//ejemplo 2
+// Ejercicio 2
 let carrito = [];
-function agregarElemento2() {
-    let elemento = document.getElementById("lista2").value;
-    carrito.push(elemento)
-    documento.getElementById(resultado2).innerTextHTML = Carro: `${carrito.join(" - ")}`;
-}
-*/
 
-/*
-🧠 Ejercicio 1: Agregar elementos
-Crea un arreglo vacío llamado compras.
-Usa push() para agregar los siguientes elementos:
-"pan", "leche" y "huevos".
-Muestra el arreglo resultante  en html.
-*/
-// referencia ul
+function mostrarListaCompra() {
+    const lista = document.getElementById("resultado2");
+    lista.innerHTML = ""; // limpiar antes de mostrar
 
-//ejercicio 1
-const resultado = document.getElementById("resultado");
-function agregarElementoCompra(){
-     //valor input
-    let elemento = document.getElementById("lista").value;
-    //Crear elemento HTML --> CreateElement
-    let item = document.createElement("li");
-    item.innerText = elemento; //<li>--InnerText--</li>
-    //appendChild inserta valor hijo en Padre
-    // resultado(<ul>(item(<li></li>))</ul>)
-    resultado.appendChild(item);
-}
-
-//ejercicio 2
-let carrito = [];
-function mostrarListaCompra(){
-    const listta = document.getElementById("resultado2");
-    lista.innerHTML = ""; //limpiar antes de mostrar
-
-    for (let i = 0; i < carrito.lencht; i++){
+    for (let i = 0; i < carrito.length; i++) {
         const li = document.createElement("li");
         li.className = "list-group-item d-flex justify-content-between align-items-center mb-2";
-        li.textContent = `-${carrito[i]}`;
+        li.textContent = `- ${carrito[i]}`;
         lista.appendChild(li);
-        mostrarListaCompra()
     }
 }
 
 function agregarElemento2() {
     const input = document.getElementById("lista2");
-    const valor = input.value.trim(); //guardo valor sin espacios extras
+    const valor = input.value.trim();
 
     if (valor === "") return;
-    carrito.push(valor); //agregar valor al final
-    
+
+    carrito.push(valor);
     input.value = "";
-    input.focus(); //agrega foco hacia el input
-    mostrarListaCompra()
+    input.focus();
+    mostrarListaCompra();
 }
 
 function eliminarUltimoElemento() {
-    if (carrito.length > 0){
+    if (carrito.length > 0) {
         carrito.pop();
-        mostrarListaCompra()
+        mostrarListaCompra();
     }
 }
