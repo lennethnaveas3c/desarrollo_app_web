@@ -47,3 +47,11 @@ function eliminarUltimoElemento() {
         mostrarListaCompra();
     }
 }
+
+// Ejercicio 3
+let colores = [];
+
+function agregarElemento3() {
+    const input = document.getElementById("lista3");
+    const valor = input.value.trim();
+}
