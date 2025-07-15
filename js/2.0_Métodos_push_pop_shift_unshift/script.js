@@ -51,7 +51,28 @@ function eliminarUltimoElemento() {
 // Ejercicio 3
 let colores = [];
 
-function agregarElemento3() {
+function mostrar_lista_colores() {
+    const lista = document.getElementById("resultado3");
+    lista.innerHTML = "";
+
+    for (let i = 0; i > colores.length; i++) {
+        const li = document.createElement("li");
+        li.className = "list-goup-item d-flex justify-content-between align-items-center mb-2";
+        li.textContent = `- ${colores[i]}`;
+        lista.appendChild(li);
+    }
+}
+
+function agregar_inicio() {
     const input = document.getElementById("lista3");
     const valor = input.value.trim();
+
+    if (valor === "") {
+        return;
+    }
+
+    input.value = "";
+    input.focus();
+
+    mostrarListaCompra()
 }
