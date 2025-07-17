@@ -178,4 +178,6 @@ function agregar_ultimo_elemento_ej5() {
 }
 
 
-//ejercicio 6
+//ejercicio 6 lo mismode arriba al aprecer solo cambia el id o eso dijeron yo q se
+
+//ejercicio 7 
