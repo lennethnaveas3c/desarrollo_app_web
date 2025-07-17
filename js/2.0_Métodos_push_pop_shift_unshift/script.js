@@ -48,6 +48,7 @@ function eliminarUltimoElemento() {
     }
 }
 
+/*
 // Ejercicio 3
 let colores = [];
 
@@ -75,4 +76,62 @@ function agregar_inicio() {
     input.focus();
 
     mostrarListaCompra()
+}
+*/
+
+/* 🧠 Ejercicio 3: Agregar al inicio */
+let colores3 = [];
+
+function mostrarColores3() {
+    const lista = document.getElementById("resultado3");
+    lista.innerHTML = "";
+    colores3.forEach(color => {
+        const li = document.createElement("li");
+        li.className = "list-group-item";
+        li.textContent = color;
+        lista.appendChild(li);
+    });
+}
+
+function agregarElemento3() {
+    const input = document.getElementById("lista3");
+    const valor = input.value.trim();
+    if (valor === "") return;
+    colores3.unshift(valor);
+    input.value = "";
+    input.focus();
+    mostrarColores3();
+}
+
+document.addEventListener("DOMContentLoaded", mostrarColores3);
+
+/* 🧠 Ejercicio 4: Agregar al inicio y eliminar primer elemento */
+let colores = [];
+
+function mostrarColores() {
+    const lista = document.getElementById("resultado4");
+    lista.innerHTML = "";
+    colores.forEach(color => {
+        const li = document.createElement("li");
+        li.className = "list-group-item";
+        li.textContent = color;
+        lista.appendChild(li);
+    });
+}
+
+function agregarElemento4() {
+    const input = document.getElementById("lista4");
+    const valor = input.value.trim();
+    if (valor === "") return;
+    colores.unshift(valor);
+    input.value = "";
+    input.focus();
+    mostrarColores();
+}
+
+function eliminarPrimerElemento() {
+    if (colores.length > 0) {
+        colores.shift();
+        mostrarColores();
+    }
 }
