@@ -176,3 +176,6 @@ function agregar_ultimo_elemento_ej5() {
 
     mostrar_lista_numeros()
 }
+
+
+//ejercicio 6
