@@ -2,9 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio con bootstrap</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Enlace CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
@@ -13,33 +14,31 @@
     <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </div>
             </div>
         </div>
     </nav>
 
     <main class="container mt-4">
-        <section class="row">
-            <!-- Ejercicio 1 -->
+        <!-- Ejercicio 1 -->
+        <section class="row mb-4">
             <section class="col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Ejercicio 1: Agregar lista de compras</h5>
                         <input type="text" class="form-control" id="lista1">
-                        <ul class="card-text mt-2" id="resultado1"></ul>
-                        <a onclick="agregarElemento1()" href="#" class="btn btn-danger mt-2">Agregar</a>
+                        <ul class="card-text" id="resultado1"></ul>
+                        <a onclick="agregarElementoCompra()" href="#" class="btn btn-danger mt-2">Agregar</a>
                     </div>
                 </div>
             </section>
@@ -50,166 +49,80 @@
                     <div class="card-body">
                         <h5 class="card-title">Ejercicio 2: Eliminar último elemento</h5>
                         <input type="text" class="form-control" id="lista2">
-                        <ul class="list-group mt-3" id="resultado2"></ul>
-                        <button onclick="agregarElemento2()" class="btn btn-primary mt-2">Agregar</button>
-                        <button onclick="eliminarUltimoElemento()" class="btn btn-danger mt-2">Eliminar último</button>
+                        <ul class="list-group mb-3" id="resultado2"></ul>
+                        <button onclick="agregarElemento2()" class="btn btn-primary">Agregar</button>
+                        <button onclick="eliminarUltimoElemento()" class="btn btn-danger">Eliminar último</button>
                     </div>
                 </div>
             </section>
         </section>
 
-        <section class="row">
-            <!-- Columna 3 -->
-            <!-- ✅ Columna 3: Agregar color al inicio con unshift() -->
-<section class="col-md-6">
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Ejercicio 3: Agregar color al inicio</h5>
-            <input type="text" class="form-control mb-2" id="lista3" placeholder="Escribe un color">
-            <ul class="list-group mb-3" id="resultado3"></ul>
-            <button onclick="agregarElemento3()" class="btn btn-warning">Agregar al inicio</button>
-        </div>
-    </div>
-</section>
+        <!-- Ejercicios 3 y 4 -->
+        <section class="row mb-4">
+            <section class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 3: Agregar al inicio</h5>
+                        <input type="text" class="form-control" id="lista3">
+                        <ul class="card-text" id="resultado3"></ul>
+                        <button onclick="agregar_inicio()" class="btn btn-danger mt-2">Agregar</button>
+                    </div>
+                </div>
+            </section>
 
-
-            <!-- ✅ Columna 4: Agregar al inicio y eliminar el primero -->
-<section class="col-md-6">
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Ejercicio 4: Agregar al inicio y eliminar el primero</h5>
-            <input type="text" class="form-control mb-2" id="lista4" placeholder="Escribe un color">
-            <ul class="list-group mb-3" id="resultado4"></ul>
-            <button onclick="agregarElemento4()" class="btn btn-success mb-2">Agregar al inicio</button>
-            <button onclick="eliminarPrimerElemento()" class="btn btn-danger">Eliminar primer elemento</button>
-        </div>
-    </div>  
-</section>
+            <section class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 4: Eliminar primer elemento</h5>
+                        <input type="text" class="form-control" id="lista4">
+                        <ul class="list-group mb-3" id="resultado4"></ul>
+                        <button onclick="agregar_inicio2()" class="btn btn-primary">Agregar</button>
+                        <button onclick="eliminar_primer_elemento()" class="btn btn-danger">Eliminar primero</button>
+                    </div>
+                </div>
+            </section>
         </section>
 
-        <section class="row">
-            <!-- Ejercicio 5 -->
+                <!-- Ejercicios 5 y 6 -->
+        <section class="row mb-4">
             <section class="col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Ejercicio 5: Combinación de métodos</h5>
-                        <input type="text" class="form-control" id="lista1">
-                        <ul class="card-text mt-2" id="resultado1"></ul>
-                        <a onclick="agregarElemento1()" href="#" class="btn btn-danger mt-2">Agregar</a>
+                        <input type="text" class="form-control" id="lista3">
+                        <ul class="card-text" id="resultado3"></ul>
+                        <button onclick="agregar_inicio_ej5()" class="btn btn-danger mt-2">Agregar al inicio</button>
+                        <button onclick="eliminar_primer_elemento_ej5()" class="btn btn-danger mt-2">Eliminar al primer elemento</button>
+                        <button onclick="agregar_ultimo_elemento_ej5()" class="btn btn-danger mt-2">Agregar al final</button>
+                        <button onclick="eliminar_ultimo_elemento_ej5()" class="btn btn-danger mt-2">Eliminar el ultimo elemento</button>
                     </div>
                 </div>
             </section>
 
-            <!-- Ejercicio 6 -->
             <section class="col-md-6">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Ejercicio 6: Agregar elementos en orden inverso</h5>
-                        <input type="text" class="form-control" id="lista2">
-                        <ul class="list-group mt-3" id="resultado2"></ul>
-                        <button onclick="agregarElemento2()" class="btn btn-primary mt-2">Agregar</button>
-                        <button onclick="eliminarUltimoElemento()" class="btn btn-danger mt-2">Eliminar último</button>
+                        <input type="text" class="form-control" id="lista4">
+                        <ul class="list-group mb-3" id="resultado4"></ul>
+                        <button onclick="agregar_inicio2()" class="btn btn-primary">Agregar</button>
+                        <button onclick="eliminar_primer_elemento()" class="btn btn-danger">Eliminar primero</button>
                     </div>
                 </div>
             </section>
         </section>
 
-        <section class="row">
-            <!-- Ejercicio 7 -->
-            <section class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Ejercicio 7: Historial de mensajes</h5>
-                        <input type="text" class="form-control" id="lista1">
-                        <ul class="card-text mt-2" id="resultado1"></ul>
-                        <a onclick="agregarElemento1()" href="#" class="btn btn-danger mt-2">Agregar</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Ejercicio 8 -->
-            <section class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Ejercicio 8: Cola de atención</h5>
-                        <input type="text" class="form-control" id="lista2">
-                        <ul class="list-group mt-3" id="resultado2"></ul>
-                        <button onclick="agregarElemento2()" class="btn btn-primary mt-2">Agregar</button>
-                        <button onclick="eliminarUltimoElemento()" class="btn btn-danger mt-2">Eliminar último</button>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <section class="row">
-            <!-- Ejercicio 9 -->
-            <section class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Ejercicio 9: Reordenar nombres</h5>
-                        <input type="text" class="form-control" id="lista1">
-                        <ul class="card-text mt-2" id="resultado1"></ul>
-                        <a onclick="agregarElemento1()" href="#" class="btn btn-danger mt-2">Agregar</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Ejercicio 10 -->
-            <section class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Ejercicio 10: Pilas y colas</h5>
-                        <input type="text" class="form-control" id="lista2">
-                        <ul class="list-group mt-3" id="resultado2"></ul>
-                        <button onclick="agregarElemento2()" class="btn btn-primary mt-2">Agregar</button>
-                        <button onclick="eliminarUltimoElemento()" class="btn btn-danger mt-2">Eliminar último</button>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <section class="row">
-            <!-- Ejercicio 11 -->
-            <section class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Ejercicio 11: Completar la semana laboral</h5>
-                        <input type="text" class="form-control" id="lista1">
-                        <ul class="card-text mt-2" id="resultado1"></ul>
-                        <a onclick="agregarElemento1()" href="#" class="btn btn-danger mt-2">Agregar</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Ejercicio 12 -->
-            <section class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Ejercicio 12: Registro de personas en una sala</h5>
-                        <input type="text" class="form-control" id="lista2">
-                        <ul class="list-group mt-3" id="resultado2"></ul>
-                        <button onclick="agregarElemento2()" class="btn btn-primary mt-2">Agregar</button>
-                        <button onclick="eliminarUltimoElemento()" class="btn btn-danger mt-2">Eliminar último</button>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <section class="row">
-            <!-- Ejercicio 13 -->
-            <section class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Ejercicio 13: Lista de tareas actualizada</h5>
-                        <input type="text" class="form-control" id="lista1">
-                        <ul class="card-text mt-2" id="resultado1"></ul>
-                        <a onclick="agregarElemento1()" href="#" class="btn btn-danger mt-2">Agregar</a>
-                    </div>
-                </div>
-            </section>
-        </section>
+        <!-- Puedes seguir esta misma lógica para los ejercicios 5 al 10 -->
+        <!-- Asegúrate de usar IDs únicos: lista5, lista6, resultado5, resultado6, etc. -->
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!-- Tu script JS -->
     <script src="script.js"></script>
+
+    <!-- Enlace JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
