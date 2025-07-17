@@ -122,7 +122,7 @@ function eliminar_primer_elemento() {
 //ejercicio 5
 let numeros = [10, 20, 30];
 
-function mostrar_lista_numeros() {
+function mostrar_lista_numeros_ej5() {
     const lista = document.getElementById("resulatado5");
     lista.innerHTML = "";
 
@@ -134,7 +134,7 @@ function mostrar_lista_numeros() {
     }
 }
 
-function agregar_inicio_2() {
+function agregar_inicio_ej5() {
     const input = document.getElementById("lista5");
     const valor = input.value.trim();
 
