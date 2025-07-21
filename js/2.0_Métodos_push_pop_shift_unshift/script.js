@@ -281,15 +281,18 @@ function agregar_inicio_orden() {
 
 // ejercicio 7 en clase
 
-let historial = [];
+let historial = []; //historial es un arreglo por que almacenara los elementos que se eliminen []
 let eliminados = [];
 
 function mostrar_historial() {
-    const lista = document.getElementById("resultado7");
+    const lista = document.getElementById("resultado7"); //
     lista.innerHTML = "";
 
     for (let i = 0; i < historial.length; i++) {
         const li = document.createElement("li");
+        li.className = "list-group-item d-flex justify-content-between align-items-center mb-2";
+        li.textContent = `- ${historial[i]}`;
+        lista.appendChild(li);
     }
 }
 
@@ -301,5 +304,5 @@ function eliminarUltimo() {
 }
 
 function agregarFinal() {
-    
+
 }
