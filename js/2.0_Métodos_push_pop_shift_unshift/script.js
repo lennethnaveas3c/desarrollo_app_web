@@ -285,7 +285,7 @@ let historial = []; //historial es un arreglo por que almacenara los elementos q
 let eliminados = [];
 
 function mostrar_historial() {
-    const lista = document.getElementById("resultado7"); //
+    const lista = document.getElementById("resultado7"); //const(tante) es un elemento que no se puede modificar
     lista.innerHTML = "";
 
     for (let i = 0; i < historial.length; i++) {
@@ -299,10 +299,23 @@ function mostrar_historial() {
 function eliminarUltimo() {
     if (historial.length > 0) {
         const borrados = historial.pop();
-        eliminados.
+        eliminados.push(borrados);
     }
+
+    mostrarEliminados();
+    mostrarMensajes();
 }
 
 function agregarFinal() {
+    const input = document.getElementById("lista7");
+    const valor = input.value.trim();
 
+    if (valor === "") return;
+
+    historial.push(valor);
+
+    input.value = "";
+    input.focus();
+
+    mostrarMensajes()
 }
