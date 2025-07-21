@@ -283,6 +283,7 @@ function agregar_inicio_orden() {
 
 let historial = []; //historial es un arreglo por que almacenara los elementos que se eliminen []
 let eliminados = [];
+const input = document.getElementById("lista7");
 
 function mostrar_historial() {
     const lista = document.getElementById("resultado7"); //const(tante) es un elemento que no se puede modificar
@@ -315,7 +316,7 @@ function agregarFinal() {
     historial.push(valor);
 
     input.value = "";
-    input.focus();
+    input.focus(); //activa el campo como un foco
 
     mostrarMensajes()
 }
