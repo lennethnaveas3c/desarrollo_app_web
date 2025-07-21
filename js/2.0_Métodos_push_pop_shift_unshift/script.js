@@ -178,6 +178,128 @@ function agregar_ultimo_elemento_ej5() {
 }
 
 
-//ejercicio 6 lo mismode arriba al aprecer solo cambia el id o eso dijeron yo q se
+//ejercicio 6 lo mismo de arriba al aprecer solo cambia el id o eso dijeron yo q se
+let numeros = [10, 20, 30];
 
-//ejercicio 7 
+function mostrar_lista_numeros_ej5() {
+    const lista = document.getElementById("resulatado5");
+    lista.innerHTML = "";
+
+    for (let i = 0; i < numeros.length; i++) {
+        const li = document.createElement("li");
+        li.className = "list-group-item d-flex justify-content-between align-items-center mb-2";
+        li.textContent = `- ${numeros[i]}`;
+        lista.appendChild(li);
+    }
+}
+
+function agregar_inicio_ej5() {
+    const input = document.getElementById("lista5");
+    const valor = input.value.trim();
+
+    if (valor === "") {
+        return;
+
+    };
+
+    numeros.unshift(valor);
+    input.value = "";
+    input.focus();
+    moastrar_lista_numeros()
+}
+
+function eliminar_primer_elemento_ej5() {
+    if (numeros.length > 0) {
+        numeros.shift();
+    }
+    mostrar_lista_numeros()
+}
+
+function eliminar_ultimo_elemento_ej5() {
+    if (numeros.legth > 0) {
+        numeros.pop();
+    }
+    mostrar_lista_numeros()
+}
+
+function agregar_ultimo_elemento_ej5() {
+    const input = document.getElementById("lista5");
+    const valor = input.value.trim();
+
+    if (valor === "") return;
+
+    numeros.push(valor);
+
+    input.value = "";
+    input.focus();
+
+    mostrar_lista_numeros()
+}
+
+//ejercicio 7 creo
+function agregar_inicio_orden() {
+    const input = document.getElementById(lista6);
+    const valor = input.value.trim();
+
+    if (valor === "") {
+        return;
+    }
+    ondragend.unshift(valor);
+    input.value = "";
+    input.focus();
+    mostrar_lista_orden()
+}
+
+//ejercicio 6 en clase
+let orden = [];
+
+function mostrar_lista_orden() {
+    const lista = document.getElementById("resultado6");
+    lista.innerHTML = "";
+
+    for (let i = 0; i < orden.length; i++) {
+        const li = document.createElement("li");
+        li.className = "list-group-item d-flex justify-content-between align-items-center mb-2";
+        li.textContent = `- ${orden[i]}`;
+        lista.appendChild(li);
+    }
+}
+
+function agregar_inicio_orden() {
+    const li = document.createElement("lista6");
+    const valor = input.value.trim();
+
+    if (valor === "") {
+        return;
+    };
+
+    orden.unshift(valor);
+    input.value = "";
+    input.focus();
+    mostrar_lista_orden();
+}
+
+// ejercicio 7 en clase
+
+let historial = [];
+let eliminados = [];
+
+function mostrar_historial() {
+    const lista = document.getElementById("resultado7");
+    lista.innerHTML = "";
+
+    for (let i = 0; i < historial.length; i++) {
+        const li = document.createElement("li");
+    }
+}
+
+function eliminarUltimo() {
+    if (historial.length > 0) {
+        const borrados = historial.pop();
+        eliminados.
+    }
+}
+
+function agregarFinal() {
+    
+}
