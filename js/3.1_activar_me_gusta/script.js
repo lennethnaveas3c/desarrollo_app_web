@@ -1,4 +1,7 @@
 function mostrarMeGusta() {
-    let elemento = document.getElementById("likes")
-    let likes = localStorage.getItem()
+    const contador = document.getElementById("likes");
+    let texto = contador.textContent;
+    let numero = parseInt(texto);
+    numero++;
+    contador.textContent = `${numero} like(s)`;
 }
