@@ -3,11 +3,30 @@
     padding: 0%;
 }
 
+.pagina{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
 nav{
     background-color: #000000;
     color: aliceblue;
     font-family: "Comic Sans MS", cursive, sans-serif;
     padding: 5px;
+}
+
+.your-feed{
+    text-align: center;
+}
+
+.James{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px auto;
+    border: 4px solid #000000;
 }
 
 section{
