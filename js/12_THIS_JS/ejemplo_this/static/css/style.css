@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/*menu principal*/
+
+nav{
+    background: #6094b4;
+    color: #000000;
+    padding: 15px 0;
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /*acomodar mejor esto*/
+    flex-direction: row;
+}
+
+li{
+    background: #9c9c9c;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.menu-button{
+    background-color: rgb(21, 50, 131);
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border-color: #000000;
+    border-style: solid;
+}
+
+/*final del menu principal*/
