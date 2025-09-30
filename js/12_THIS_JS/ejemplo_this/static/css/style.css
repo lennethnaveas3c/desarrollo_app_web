@@ -1,40 +1,52 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+* {
     margin: 0;
     padding: 0;
 }
 
-/*menu principal*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
+}
 
-nav{
-    background: #6094b4;
-    color: #000000;
-    padding: 15px 0;
+a {
+    color: #085394;
+}
+
+.container {
+    margin:0 auto;
+    max-width: 62.5rem; /* equivalente a 1000px */
+    width: 100%;
+}
+
+.top {
+    background-color: #ccc;
+    height: 60px;
+    padding: 20px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-ul{
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end; /*acomodar mejor esto*/
-    flex-direction: row;
+.title {
+    font-size: 3.2rem;
 }
 
-li{
-    background: #9c9c9c;
-    margin: 5px 0;
-    padding: 10px;
+.search {
+    flex: 1;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    margin: 0 100px;
 }
 
-.menu-button{
-    background-color: rgb(21, 50, 131);
-    color: white;
-    margin: 5px;
-    padding: 5px;
-    border-color: #000000;
-    border-style: solid;
+.btn {
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #000;
+    cursor: pointer;
 }
 
-/*final del menu principal*/
+.login {
+    background-color: #2b78e4;
+    color: #fff;
+}
