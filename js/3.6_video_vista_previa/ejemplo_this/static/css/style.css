@@ -21,10 +21,13 @@ body{}
 }
 
 /*top navigation*/
+/*contenedor*/
 .nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 95%;
+    margin: 0 auto; /*centrar*/
     padding: 20px;
 }
 
@@ -36,10 +39,11 @@ body{}
     padding: 10px;
     border-radius: 5px;
     border-bottom: solid 5px rgb(0, 0, 0);
-    outline: none;
+    border-style: solid;
     width: 300px;
 }
 
+/*boton*/
 .nav-container button{
     padding: 8px 15px;
     background-color: rgb(153,0,255);
@@ -53,8 +57,10 @@ body{}
     border-radius: 4px;
 }
 
+/*otro contenedor*/
 /*video principal*/
 .placeholder{
     width: 80%;
     margin: 0 auto; /*centrar*/
+    margin-top: 20px;
 }
