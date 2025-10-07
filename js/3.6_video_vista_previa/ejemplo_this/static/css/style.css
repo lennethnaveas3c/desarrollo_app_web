@@ -76,3 +76,26 @@ body{}
     width: 80%;
     margin: 0 auto; /*centrar*/
 }
+
+.row button{
+    padding: 8px 15px;
+    background-color: rgb(153,0,255);
+    color: white;
+    border-color: black;
+    border-bottom: solid 5px rgb(0, 0, 0);  /*borde boton*/
+    border-style: solid;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 360px;
+}
+
+/*titulo de video y otros elementos*/
+.start{}
+
+.start h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
