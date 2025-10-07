@@ -63,5 +63,16 @@ body{}
     width: 80%;
     margin: 0 auto; /*centrar*/
     margin-top: 20px;
+    border: solid 5px rgb(0, 0, 0);  /*borde video*/
+    border-radius: 10px;
 }
 
+/*video info*/
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 80%;
+    margin: 0 auto; /*centrar*/
+}
