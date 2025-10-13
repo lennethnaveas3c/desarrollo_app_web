@@ -99,3 +99,13 @@ body{}
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
+.start img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.start span{
+    font-size: 20px;
+    color: rgb(153,0,255);
+}
