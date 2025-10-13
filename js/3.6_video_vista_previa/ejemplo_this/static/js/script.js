@@ -1,27 +1,16 @@
-function cambiarVideo(clickedVideo) {
-    const videoMain = document.getElementById("video_main");
-    const videoTitle = document.getElementById("video-title");
+function cambioVideo(elemento){
+    const mainVideo = document.getElementById("mainVideo");
+    let rutaMainVideo = mainVideo.src;
+    let videoPequeno = elemento.src;
+    elemento.src = rutaMainVideo;
+    mainVideo.src = videoPequeno;
 
-    // Guardar datos del video principal
-    const mainSrc = videoMain.src;
-    const mainTitle = videoTitle.textContent;
+    // Cambio de Texto
+    const textoMain = document.getElementById("textoMain");
+    let contentTextoMain = textoMain.textContent;
+    const textoPequeno = elemento.nextElementSibling; // selecciona el texto del video pequeño
+    let contentTextoPequeno = textoPequeno.textContent;
 
-    // Datos del clicado
-    const clickedSrc = clickedVideo.src;
-    const clickedTitle = clickedVideo.getAttribute("data-title");
-
-    // Cambiar el principal por el clicado
-    videoMain.src = clickedSrc;
-    videoMain.play();
-    videoTitle.textContent = clickedTitle;
-
-    // Intercambiar el src y data-title en la miniatura clicada
-    clickedVideo.src = mainSrc;
-    clickedVideo.setAttribute("data-title", mainTitle);
-
-    // También actualizar el texto que aparece debajo
-    const span = clickedVideo.parentElement.querySelector('.video-title');
-    if (span) {
-        span.textContent = mainTitle;
-    }
+    textoMain.textContent = contentTextoPequeno;
+    textoPequeno.textContent = contentTextoMain;
 }
