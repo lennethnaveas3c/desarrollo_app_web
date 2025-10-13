@@ -7,6 +7,14 @@
 
 body{}
 
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
 /*top bar*/
 .top{
     width: 80%;
@@ -92,7 +100,6 @@ body{}
 }
 
 /*titulo de video y otros elementos*/
-.start{}
 
 .start h1{
     font-size: 40px;
@@ -101,11 +108,21 @@ body{}
 }
 
 .start img{
-    width: 50px;
+    width: 60px;
     margin-right: 10px;
 }
 
 .start span{
     font-size: 20px;
     color: rgb(153,0,255);
+    font-weight: bold;
+}
+
+/*videos de la derecha*/
+.col-r{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 3;
+    margin-left: 20px;
 }
