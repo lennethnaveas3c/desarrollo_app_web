@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
+    font-family:  "Comic Sans MS", cursive, sans-serif;
 }
 
 /*la parte de arriba*/
@@ -35,7 +35,15 @@ body{
 .nav-container li{
     margin-right: 50px;
     font-size: 20px;
-    text-decoration: underline;
+    text-decoration: underline; /*no logra eliminar el subrayado*/
+    cursor: pointer;
+}
+
+.section-temperaura{
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -50,7 +58,9 @@ body{
 .main{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin: 10px;
+    box-shadow: 0 2px rgba(0, 0, 0, 1);
+    padding: 20px;
 }
 
 .show{      /*show temperature*/
